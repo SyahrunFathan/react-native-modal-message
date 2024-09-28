@@ -2,7 +2,8 @@
 
 React Native Modal Message
 
-<img src="src/assets/images/success.jpg" alt="Screenshot of the app" width="300"/>
+<img src="src/assets/images/success.jpg" alt="Screenshot of the app" width="300" style="display:inline-block; margin-right: 10px;"/>
+<img src="src/assets/images/error.jpg" alt="Screenshot of the app" width="300" style="display:inline-block"/>
 
 ## Installation
 
