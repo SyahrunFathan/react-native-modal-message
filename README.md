@@ -2,9 +2,9 @@
 
 React Native Modal Message
 
-| Success Modal                             | Error Modal                           | Confirm Modal                             |
-| ----------------------------------------- | ------------------------------------- | ----------------------------------------- |
-| ![Success](src/assets/images/success.jpg) | ![Error](src/assets/images/error.jpg) | ![Confirm](src/assets/images/warning.jpg) |
+| Success Modal                             | Error Modal                           | Confirm Modal                                     |
+| ----------------------------------------- | ------------------------------------- | ------------------------------------------------- |
+| ![Success](src/assets/images/success.jpg) | ![Error](src/assets/images/error.jpg) | ![Confirm](src/assets/images/warning-warning.jpg) |
 
 ## Installation
 
