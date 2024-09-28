@@ -2,6 +2,8 @@
 
 React Native Modal Message
 
+<img src="src/assets/images/success.jpg" alt="Screenshot of the app" width="300"/>
+
 ## Installation
 
 ```sh
@@ -10,15 +12,95 @@ npm install react-native-modal-message
 
 ## Usage
 
+1. Go to file App.js
 
 ```js
-import { multiply } from 'react-native-modal-message';
+// Library yang lain
+import { ModalProvider } from 'react-native-modal-message';
 
-// ...
+const App = () => {
+  return (
+    <ModalProvider>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </ModalProvider>
+  );
+};
 
-const result = await multiply(3, 7);
+export default App;
 ```
 
+2. Use of modal success
+
+```js
+import { useModal } from 'react-native-modal-message';
+
+const MyScreen = () => {
+  const { showSuccessModal } = useModal();
+
+  return (
+    <View>
+      <Button
+        title="Show Modal"
+        onPress={() => showSuccessModal('Success Message!', 'Done', () => null)}
+      />
+    </View>
+  );
+};
+
+export default MyScreen;
+```
+
+3. Use of modal error
+
+```js
+import { useModal } from 'react-native-modal-message';
+
+const MyScreen = () => {
+  const { showErrorModal } = useModal();
+
+  return (
+    <View>
+      <Button
+        title="Show Modal"
+        onPress={() => showErrorModal('Error Message!', 'Done', () => null)}
+      />
+    </View>
+  );
+};
+
+export default MyScreen;
+```
+
+4. Use of modal confirm
+
+```js
+import { useModal } from 'react-native-modal-message';
+
+const MyScreen = () => {
+  const { showModalConfirm } = useModal();
+
+  return (
+    <View>
+      <Button
+        title="Show Modal"
+        onPress={() =>
+          showErrorModal(
+            'Header Text!',
+            'Body Text',
+            'Text Cancel',
+            'Text Action',
+            () => null
+          )
+        }
+      />
+    </View>
+  );
+};
+
+export default MyScreen;
+```
 
 ## Contributing
 

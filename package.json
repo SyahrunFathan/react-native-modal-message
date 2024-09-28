@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-message",
-  "version": "0.1.0",
+  "version": "0.1.11",
   "description": "React Native Modal Message",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -38,7 +38,6 @@
   "scripts": {
     "example": "yarn workspace react-native-modal-message-example",
     "test": "jest",
-    "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
@@ -68,7 +67,6 @@
     "@react-native/eslint-config": "^0.73.1",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.44",
     "commitlint": "^17.0.2",
     "del-cli": "^5.1.0",
     "eslint": "^8.51.0",
@@ -79,8 +77,7 @@
     "react": "18.2.0",
     "react-native": "0.74.5",
     "react-native-builder-bob": "^0.30.2",
-    "release-it": "^15.0.0",
-    "typescript": "^5.2.2"
+    "release-it": "^15.0.0"
   },
   "resolutions": {
     "@types/react": "^18.2.44"
@@ -166,13 +163,6 @@
       [
         "module",
         {
-          "esm": true
-        }
-      ],
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json",
           "esm": true
         }
       ]
