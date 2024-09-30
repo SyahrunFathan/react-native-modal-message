@@ -88,7 +88,7 @@ const MyScreen = () => {
       <Button
         title="Show Modal"
         onPress={() =>
-          showErrorModal(
+          showModalConfirm(
             'Header Text!',
             'Body Text',
             'Text Cancel',

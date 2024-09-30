@@ -1,6 +1,6 @@
 {
   "name": "react-native-modal-message",
-  "version": "0.1.11",
+  "version": "1.1.0",
   "description": "React Native Modal Message",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
